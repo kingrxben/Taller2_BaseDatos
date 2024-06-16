@@ -1,6 +1,6 @@
 ﻿namespace Taller2
 {
-    partial class EliminarCliente
+    partial class EliminarPrueba
     {
         /// <summary>
         /// Required designer variable.
@@ -28,61 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.Eliminar = new System.Windows.Forms.Button();
             this.dataGrid = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(356, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Eliminar Cliente";
-            // 
             // Eliminar
             // 
-            this.Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Eliminar.Location = new System.Drawing.Point(365, 346);
+            this.Eliminar.Location = new System.Drawing.Point(367, 259);
             this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Size = new System.Drawing.Size(90, 50);
-            this.Eliminar.TabIndex = 2;
+            this.Eliminar.Size = new System.Drawing.Size(75, 23);
+            this.Eliminar.TabIndex = 0;
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.UseVisualStyleBackColor = true;
-            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // dataGrid
             // 
             this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrid.Location = new System.Drawing.Point(206, 119);
+            this.dataGrid.Location = new System.Drawing.Point(171, 91);
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.RowHeadersWidth = 51;
             this.dataGrid.RowTemplate.Height = 24;
-            this.dataGrid.Size = new System.Drawing.Size(568, 204);
-            this.dataGrid.TabIndex = 3;
+            this.dataGrid.Size = new System.Drawing.Size(482, 150);
+            this.dataGrid.TabIndex = 1;
             // 
-            // EliminarCliente
+            // EliminarPrueba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGrid);
             this.Controls.Add(this.Eliminar);
-            this.Controls.Add(this.label1);
-            this.Name = "EliminarCliente";
-            this.Text = "EliminarCliente";
+            this.Name = "EliminarPrueba";
+            this.Text = "EliminarPrueba";
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Eliminar;
         private System.Windows.Forms.DataGridView dataGrid;
     }
