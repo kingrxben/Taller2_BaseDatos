@@ -18,9 +18,9 @@ namespace Taller2
             InitializeComponent();
         }
 
-        private void EliminarCLiente_cargarInfo(object sender, EventArgs e)
+        private void EliminarCLiente_Load(object sender, EventArgs e)
         {
-            string query = "SELECT CodigoCliente, NombreCliente, Ciudad FROM Cliente WHERE Estado = 1";
+            string query = "SELECT * FROM cliente WHERE Estado = 1";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
             dataGrid.DataSource = data;
         }
@@ -28,7 +28,7 @@ namespace Taller2
         
         private void Eliminar_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE clientes SET estado = 1 WHERE id = @id";
+            string query = "UPDATE cliente SET Estado = 0 WHERE id = @id";
             MySqlParameter[] parametros =
             {
                 new MySqlParameter("@id", dataGrid.CurrentCell.Value)
@@ -41,7 +41,8 @@ namespace Taller2
             dataGrid.DataSource = data;
         }
          
-        private void DatosCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
