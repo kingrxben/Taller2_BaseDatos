@@ -54,9 +54,10 @@
             // 
             // AñadirBoton
             // 
-            this.AñadirBoton.Location = new System.Drawing.Point(385, 302);
+            this.AñadirBoton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.AñadirBoton.Location = new System.Drawing.Point(372, 294);
             this.AñadirBoton.Name = "AñadirBoton";
-            this.AñadirBoton.Size = new System.Drawing.Size(75, 23);
+            this.AñadirBoton.Size = new System.Drawing.Size(100, 50);
             this.AñadirBoton.TabIndex = 2;
             this.AñadirBoton.Text = "Añadir";
             this.AñadirBoton.UseVisualStyleBackColor = true;

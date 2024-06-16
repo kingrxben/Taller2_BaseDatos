@@ -26,7 +26,7 @@ namespace Taller2
         private void VerClientes_Click(object sender, EventArgs e)
         {
             VerClientes verClientes = new VerClientes();
-            verClientes.Show();
+            verClientes.Show(); 
         }
 
         private void VerProductos_Click(object sender, EventArgs e)

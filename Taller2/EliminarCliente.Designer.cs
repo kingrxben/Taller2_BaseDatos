@@ -46,19 +46,20 @@
             // DatosCliente
             // 
             this.DatosCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DatosCliente.Location = new System.Drawing.Point(227, 110);
+            this.DatosCliente.Location = new System.Drawing.Point(130, 113);
             this.DatosCliente.Name = "DatosCliente";
             this.DatosCliente.RowHeadersWidth = 51;
             this.DatosCliente.RowTemplate.Height = 24;
-            this.DatosCliente.Size = new System.Drawing.Size(367, 217);
+            this.DatosCliente.Size = new System.Drawing.Size(543, 217);
             this.DatosCliente.TabIndex = 1;
             this.DatosCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DatosCliente_CellContentClick);
             // 
             // Eliminar
             // 
-            this.Eliminar.Location = new System.Drawing.Point(373, 347);
+            this.Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Eliminar.Location = new System.Drawing.Point(365, 346);
             this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Size = new System.Drawing.Size(75, 23);
+            this.Eliminar.Size = new System.Drawing.Size(90, 50);
             this.Eliminar.TabIndex = 2;
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.UseVisualStyleBackColor = true;

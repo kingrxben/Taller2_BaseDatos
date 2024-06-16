@@ -16,5 +16,10 @@ namespace Taller2
         {
             InitializeComponent();
         }
+
+        private void AñadirBoton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

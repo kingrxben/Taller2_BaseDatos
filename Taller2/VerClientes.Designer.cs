@@ -38,35 +38,39 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(363, 108);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label1.Location = new System.Drawing.Point(315, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 16);
+            this.label1.Size = new System.Drawing.Size(173, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Menú Cliente";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(154, 193);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(206, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Agregar";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(377, 193);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.Location = new System.Drawing.Point(497, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
+            this.label3.Size = new System.Drawing.Size(81, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Eliminar";
             // 
             // AgregarCliente
             // 
-            this.AgregarCliente.Location = new System.Drawing.Point(144, 243);
+            this.AgregarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.AgregarCliente.Location = new System.Drawing.Point(198, 226);
             this.AgregarCliente.Name = "AgregarCliente";
-            this.AgregarCliente.Size = new System.Drawing.Size(75, 23);
+            this.AgregarCliente.Size = new System.Drawing.Size(90, 40);
             this.AgregarCliente.TabIndex = 3;
             this.AgregarCliente.Text = "Ir";
             this.AgregarCliente.UseVisualStyleBackColor = true;
@@ -74,9 +78,10 @@
             // 
             // EliminarCliente
             // 
-            this.EliminarCliente.Location = new System.Drawing.Point(372, 243);
+            this.EliminarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.EliminarCliente.Location = new System.Drawing.Point(488, 226);
             this.EliminarCliente.Name = "EliminarCliente";
-            this.EliminarCliente.Size = new System.Drawing.Size(75, 23);
+            this.EliminarCliente.Size = new System.Drawing.Size(90, 40);
             this.EliminarCliente.TabIndex = 4;
             this.EliminarCliente.Text = "Ir";
             this.EliminarCliente.UseVisualStyleBackColor = true;
