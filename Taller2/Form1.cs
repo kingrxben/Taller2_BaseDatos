@@ -31,8 +31,8 @@ namespace Taller2
 
         private void VerProductos_Click(object sender, EventArgs e)
         {
-            IngresarProducto ingresarProducto = new IngresarProducto();
-            ingresarProducto.Show();
+            VerProductos verProductos = new VerProductos();
+            verProductos.Show();
         }
 
      

@@ -99,11 +99,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectMySQL.cs" />
+    <Compile Include="DetalleProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleProducto.Designer.cs">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="EliminarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EliminarCliente.Designer.cs">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarProducto.Designer.cs">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="EliminarPrueba.cs">
       <SubType>Form</SubType>
@@ -149,6 +161,15 @@
     <Compile Include="VerClientes.Designer.cs">
       <DependentUpon>VerClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerProductos.Designer.cs">
+      <DependentUpon>VerProductos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DetalleProducto.resx">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +199,9 @@
     </Compile>
     <EmbeddedResource Include="VerClientes.resx">
       <DependentUpon>VerClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerProductos.resx">
+      <DependentUpon>VerProductos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
