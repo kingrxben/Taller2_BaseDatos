@@ -33,6 +33,13 @@
             this.PrecioLabel1 = new System.Windows.Forms.Label();
             this.PrecioLabel2 = new System.Windows.Forms.Label();
             this.ProductoLabel = new System.Windows.Forms.Label();
+            this.ListaProductosBox = new System.Windows.Forms.ComboBox();
+            this.StockActualBox = new System.Windows.Forms.TextBox();
+            this.PrecioActualBox = new System.Windows.Forms.TextBox();
+            this.StockNuevoBox = new System.Windows.Forms.TextBox();
+            this.PrecioNuevoBox = new System.Windows.Forms.TextBox();
+            this.ActualizarStockBoton = new System.Windows.Forms.Button();
+            this.ActualizarPrecioBoton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StockLabel1
@@ -85,11 +92,75 @@
             this.ProductoLabel.TabIndex = 4;
             this.ProductoLabel.Text = "Producto";
             // 
+            // ListaProductosBox
+            // 
+            this.ListaProductosBox.FormattingEnabled = true;
+            this.ListaProductosBox.Location = new System.Drawing.Point(43, 128);
+            this.ListaProductosBox.Name = "ListaProductosBox";
+            this.ListaProductosBox.Size = new System.Drawing.Size(121, 24);
+            this.ListaProductosBox.TabIndex = 5;
+            this.ListaProductosBox.SelectedIndexChanged += new System.EventHandler(this.ListaProductosBox_SelectedIndexChanged);
+            // 
+            // StockActualBox
+            // 
+            this.StockActualBox.Location = new System.Drawing.Point(260, 128);
+            this.StockActualBox.Name = "StockActualBox";
+            this.StockActualBox.Size = new System.Drawing.Size(100, 22);
+            this.StockActualBox.TabIndex = 6;
+            // 
+            // PrecioActualBox
+            // 
+            this.PrecioActualBox.Location = new System.Drawing.Point(483, 128);
+            this.PrecioActualBox.Name = "PrecioActualBox";
+            this.PrecioActualBox.Size = new System.Drawing.Size(100, 22);
+            this.PrecioActualBox.TabIndex = 7;
+            // 
+            // StockNuevoBox
+            // 
+            this.StockNuevoBox.Location = new System.Drawing.Point(260, 270);
+            this.StockNuevoBox.Name = "StockNuevoBox";
+            this.StockNuevoBox.Size = new System.Drawing.Size(100, 22);
+            this.StockNuevoBox.TabIndex = 8;
+            // 
+            // PrecioNuevoBox
+            // 
+            this.PrecioNuevoBox.Location = new System.Drawing.Point(483, 270);
+            this.PrecioNuevoBox.Name = "PrecioNuevoBox";
+            this.PrecioNuevoBox.Size = new System.Drawing.Size(100, 22);
+            this.PrecioNuevoBox.TabIndex = 9;
+            // 
+            // ActualizarStockBoton
+            // 
+            this.ActualizarStockBoton.Location = new System.Drawing.Point(274, 329);
+            this.ActualizarStockBoton.Name = "ActualizarStockBoton";
+            this.ActualizarStockBoton.Size = new System.Drawing.Size(75, 23);
+            this.ActualizarStockBoton.TabIndex = 10;
+            this.ActualizarStockBoton.Text = "Actualizar";
+            this.ActualizarStockBoton.UseVisualStyleBackColor = true;
+            this.ActualizarStockBoton.Click += new System.EventHandler(this.ActualizarStockBoton_Click);
+            // 
+            // ActualizarPrecioBoton
+            // 
+            this.ActualizarPrecioBoton.Location = new System.Drawing.Point(498, 329);
+            this.ActualizarPrecioBoton.Name = "ActualizarPrecioBoton";
+            this.ActualizarPrecioBoton.Size = new System.Drawing.Size(75, 23);
+            this.ActualizarPrecioBoton.TabIndex = 11;
+            this.ActualizarPrecioBoton.Text = "Actualizar";
+            this.ActualizarPrecioBoton.UseVisualStyleBackColor = true;
+            this.ActualizarPrecioBoton.Click += new System.EventHandler(this.ActualizarPrecioBoton_Click);
+            // 
             // ModificarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ActualizarPrecioBoton);
+            this.Controls.Add(this.ActualizarStockBoton);
+            this.Controls.Add(this.PrecioNuevoBox);
+            this.Controls.Add(this.StockNuevoBox);
+            this.Controls.Add(this.PrecioActualBox);
+            this.Controls.Add(this.StockActualBox);
+            this.Controls.Add(this.ListaProductosBox);
             this.Controls.Add(this.ProductoLabel);
             this.Controls.Add(this.PrecioLabel2);
             this.Controls.Add(this.PrecioLabel1);
@@ -97,6 +168,7 @@
             this.Controls.Add(this.StockLabel1);
             this.Name = "ModificarProducto";
             this.Text = "ModificarProducto";
+            this.Load += new System.EventHandler(this.ModificarProducto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,5 +181,12 @@
         private System.Windows.Forms.Label PrecioLabel1;
         private System.Windows.Forms.Label PrecioLabel2;
         private System.Windows.Forms.Label ProductoLabel;
+        private System.Windows.Forms.ComboBox ListaProductosBox;
+        private System.Windows.Forms.TextBox StockActualBox;
+        private System.Windows.Forms.TextBox PrecioActualBox;
+        private System.Windows.Forms.TextBox StockNuevoBox;
+        private System.Windows.Forms.TextBox PrecioNuevoBox;
+        private System.Windows.Forms.Button ActualizarStockBoton;
+        private System.Windows.Forms.Button ActualizarPrecioBoton;
     }
 }

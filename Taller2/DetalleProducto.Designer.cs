@@ -30,8 +30,8 @@
         {
             this.SubtituloText = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Opciones = new System.Windows.Forms.ListBox();
             this.TituloText = new System.Windows.Forms.Label();
+            this.DetalleProductoBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,25 +47,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(208, 149);
+            this.dataGridView1.Location = new System.Drawing.Point(161, 182);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(373, 222);
+            this.dataGridView1.Size = new System.Drawing.Size(463, 247);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // Opciones
-            // 
-            this.Opciones.FormattingEnabled = true;
-            this.Opciones.ItemHeight = 16;
-            this.Opciones.Items.AddRange(new object[] {
-            "Productos en venta",
-            "Productos vendidos este año",
-            "Productos vendidos ultimos 2 años"});
-            this.Opciones.Location = new System.Drawing.Point(59, 167);
-            this.Opciones.Name = "Opciones";
-            this.Opciones.Size = new System.Drawing.Size(120, 20);
-            this.Opciones.TabIndex = 2;
             // 
             // TituloText
             // 
@@ -77,13 +64,26 @@
             this.TituloText.TabIndex = 3;
             this.TituloText.Text = "Detalle de Productos";
             // 
+            // DetalleProductoBox
+            // 
+            this.DetalleProductoBox.FormattingEnabled = true;
+            this.DetalleProductoBox.Items.AddRange(new object[] {
+            "Productos en venta",
+            "Productos vendidos este año",
+            "Productos vendidos ultimos 2 años"});
+            this.DetalleProductoBox.Location = new System.Drawing.Point(161, 149);
+            this.DetalleProductoBox.Name = "DetalleProductoBox";
+            this.DetalleProductoBox.Size = new System.Drawing.Size(230, 24);
+            this.DetalleProductoBox.TabIndex = 4;
+            this.DetalleProductoBox.SelectedIndexChanged += new System.EventHandler(this.DetalleProductoBox_SelectedIndexChanged);
+            // 
             // DetalleProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DetalleProductoBox);
             this.Controls.Add(this.TituloText);
-            this.Controls.Add(this.Opciones);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.SubtituloText);
             this.Name = "DetalleProducto";
@@ -98,7 +98,7 @@
 
         private System.Windows.Forms.Label SubtituloText;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ListBox Opciones;
         private System.Windows.Forms.Label TituloText;
+        private System.Windows.Forms.ComboBox DetalleProductoBox;
     }
 }

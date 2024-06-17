@@ -31,11 +31,11 @@
             this.NombreBox = new System.Windows.Forms.TextBox();
             this.CiudadBox = new System.Windows.Forms.TextBox();
             this.AñadirBoton = new System.Windows.Forms.Button();
-            this.TipoBox = new System.Windows.Forms.ListBox();
             this.NombreLabel = new System.Windows.Forms.Label();
             this.CiudadLabel = new System.Windows.Forms.Label();
             this.TipoLabel = new System.Windows.Forms.Label();
             this.TituloLabel = new System.Windows.Forms.Label();
+            this.TipoBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // NombreBox
@@ -62,19 +62,6 @@
             this.AñadirBoton.Text = "Añadir";
             this.AñadirBoton.UseVisualStyleBackColor = true;
             this.AñadirBoton.Click += new System.EventHandler(this.AñadirBoton_Click);
-            // 
-            // TipoBox
-            // 
-            this.TipoBox.FormattingEnabled = true;
-            this.TipoBox.ItemHeight = 16;
-            this.TipoBox.Items.AddRange(new object[] {
-            "Normal",
-            "Premiun"});
-            this.TipoBox.Location = new System.Drawing.Point(574, 219);
-            this.TipoBox.Name = "TipoBox";
-            this.TipoBox.Size = new System.Drawing.Size(120, 20);
-            this.TipoBox.TabIndex = 3;
-            this.TipoBox.SelectedIndexChanged += new System.EventHandler(this.TipoBox_SelectedIndexChanged);
             // 
             // NombreLabel
             // 
@@ -116,16 +103,28 @@
             this.TituloLabel.TabIndex = 7;
             this.TituloLabel.Text = "Ingresar Cliente";
             // 
+            // TipoBox
+            // 
+            this.TipoBox.FormattingEnabled = true;
+            this.TipoBox.Items.AddRange(new object[] {
+            "Normal",
+            "Premium"});
+            this.TipoBox.Location = new System.Drawing.Point(577, 219);
+            this.TipoBox.Name = "TipoBox";
+            this.TipoBox.Size = new System.Drawing.Size(121, 24);
+            this.TipoBox.TabIndex = 8;
+            this.TipoBox.SelectedIndexChanged += new System.EventHandler(this.TipoBox_SelectedIndexChanged_1);
+            // 
             // IngresarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TipoBox);
             this.Controls.Add(this.TituloLabel);
             this.Controls.Add(this.TipoLabel);
             this.Controls.Add(this.CiudadLabel);
             this.Controls.Add(this.NombreLabel);
-            this.Controls.Add(this.TipoBox);
             this.Controls.Add(this.AñadirBoton);
             this.Controls.Add(this.CiudadBox);
             this.Controls.Add(this.NombreBox);
@@ -141,10 +140,10 @@
         private System.Windows.Forms.TextBox NombreBox;
         private System.Windows.Forms.TextBox CiudadBox;
         private System.Windows.Forms.Button AñadirBoton;
-        private System.Windows.Forms.ListBox TipoBox;
         private System.Windows.Forms.Label NombreLabel;
         private System.Windows.Forms.Label CiudadLabel;
         private System.Windows.Forms.Label TipoLabel;
         private System.Windows.Forms.Label TituloLabel;
+        private System.Windows.Forms.ComboBox TipoBox;
     }
 }

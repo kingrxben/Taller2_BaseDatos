@@ -28,5 +28,17 @@ namespace Taller2
             EliminarCliente eliminarCliente = new EliminarCliente();
             eliminarCliente.Show();
         }
+
+        private void ActualizarStatusBoton_Click(object sender, EventArgs e)
+        {
+            ActualizarStatus actualizarStatus = new ActualizarStatus();
+            actualizarStatus.Show();
+        }
+
+        private void ListClientesBoton_Click(object sender, EventArgs e)
+        {
+            ListadoClientes listadoClientes = new ListadoClientes();
+            listadoClientes.Show();
+        }
     }
 }

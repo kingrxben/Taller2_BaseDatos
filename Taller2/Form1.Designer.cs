@@ -119,6 +119,7 @@
             this.VerVentas.TabIndex = 6;
             this.VerVentas.Text = "Ver";
             this.VerVentas.UseVisualStyleBackColor = true;
+            this.VerVentas.Click += new System.EventHandler(this.VerVentas_Click);
             // 
             // Form1
             // 

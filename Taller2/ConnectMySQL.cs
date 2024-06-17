@@ -26,15 +26,17 @@ namespace Taller2
         private string database;
         private string username;
         private string password;
+        private string port;
 
         private ConnectMySQL()
         {
             server = "localhost";
             database = "taller2";
             username = "root";
-            password = "rmn934";
+            password = "root";
+            port = "3308";
 
-            string connectionString = $"SERVER={server};DATABASE={database};UID={username};PASSWORD={password};";
+            string connectionString = $"SERVER={server};PORT={port};DATABASE={database};UID={username};PASSWORD={password};";
 
             connection = new MySqlConnection(connectionString);
         }

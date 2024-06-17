@@ -35,6 +35,10 @@ namespace Taller2
             verProductos.Show();
         }
 
-     
+        private void VerVentas_Click(object sender, EventArgs e)
+        {
+            VerVentas verVentas = new VerVentas();
+            verVentas.Show();
+        }
     }
 }

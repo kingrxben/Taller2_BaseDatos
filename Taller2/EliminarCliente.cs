@@ -20,29 +20,28 @@ namespace Taller2
 
         private void EliminarCLiente_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM cliente WHERE Estado = 1";
+            string query = "SELECT CodigoCliente,NombreCliente,TipoCliente FROM cliente WHERE Estado = 0";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
-            dataGrid.DataSource = data;
+            dataGridView1.DataSource = data;
         }
 
-        
+
         private void Eliminar_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE cliente SET Estado = 0 WHERE id = @id";
+            string query = "UPDATE cliente SET Estado = 1 WHERE CodigoCliente = @id";
             MySqlParameter[] parametros =
             {
-                new MySqlParameter("@id", dataGrid.CurrentCell.Value)
+                new MySqlParameter("@id", dataGridView1.CurrentCell.Value)
             };
             ConnectMySQL.Instance.ExecuteQuery(query, parametros);
             MessageBox.Show("Cliente eliminado con éxito");
 
-            query = "SELECT id, nombre, ciudad FROM clientes WHERE estado = 0";
+            query = "SELECT * FROM cliente WHERE Estado = 0";
             DataTable data = ConnectMySQL.Instance.SelectQuery(query);
-            dataGrid.DataSource = data;
+            dataGridView1.DataSource = data;
         }
-         
-        
-        private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

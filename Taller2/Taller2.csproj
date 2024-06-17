@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarStatus.Designer.cs">
+      <DependentUpon>ActualizarStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnectMySQL.cs" />
     <Compile Include="DetalleProducto.cs">
       <SubType>Form</SubType>
@@ -147,6 +153,12 @@
     <Compile Include="IngresarVenta.Designer.cs">
       <DependentUpon>IngresarVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListadoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoClientes.Designer.cs">
+      <DependentUpon>ListadoClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,11 +179,23 @@
     <Compile Include="VerProductos.Designer.cs">
       <DependentUpon>VerProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerVentas.Designer.cs">
+      <DependentUpon>VerVentas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActualizarStatus.resx">
+      <DependentUpon>ActualizarStatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetalleProducto.resx">
       <DependentUpon>DetalleProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarPrueba.resx">
       <DependentUpon>EliminarPrueba.cs</DependentUpon>
@@ -184,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IngresarProducto.resx">
       <DependentUpon>IngresarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarVenta.resx">
+      <DependentUpon>IngresarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoClientes.resx">
+      <DependentUpon>ListadoClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarProducto.resx">
       <DependentUpon>ModificarProducto.cs</DependentUpon>
@@ -202,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VerProductos.resx">
       <DependentUpon>VerProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerVentas.resx">
+      <DependentUpon>VerVentas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
